@@ -1,0 +1,11 @@
+@media (max-width: 1000px){
+    .apresentacao {
+        flex-wrap: wrap;
+        height: 3500px ;
+    }
+
+    .Trapezio{
+        height: 2000px ;
+    }
+}
+
