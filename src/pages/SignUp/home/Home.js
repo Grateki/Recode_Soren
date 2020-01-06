@@ -101,6 +101,8 @@ const P = styled.p`
 `;
 
 const Nome = styled.input`
+    outline: 0;
+    border-color: blueviolet;
     background: black;
     border-radius: 100px;
     width: 350px;
@@ -123,7 +125,7 @@ const Div = styled.div`
 `;
 
 const Cadastre = styled.button`
-    background-color: #313536;
+    background-color: #101010;
     height: 30px;
     width: 370px;
     border-radius: 100px;
@@ -131,8 +133,8 @@ const Cadastre = styled.button`
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    color: white;
-    border: 1px solid white;
+    color: #fff;
+    border: 1px solid blueviolet;
     text-decoration: none;
     :hover{
         background-color: #505050;
