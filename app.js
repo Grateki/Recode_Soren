@@ -1,17 +1,25 @@
 const express = require('express');
-const routes = require('./rotas')
+const routes = require('./routes');
+const mysql = require('mysql');
+
+// Aqui estou chamando o banco de dados
+const connection = require('./database/db')
+
 
 const app = express();
-
 app.get('/', (req, res) => {
-    res.send('Funcionando...')
+    res.send([{nome: "ola"}]);
 });
 
-app.use('/api', routes);
-app.use(express.static(__dirname + "/client"))
+// configurei a query para usar a database cadastro
+connection.query('use cadastro;');
+ 
+/* 
+connection.query('select * from pessoas', (error, data) => {
+    console.log({erro: error, dados: data})
+}); */
 
-
-let port = 3004;
+let port = 3010;
 app.listen(port, () => {
     console.log(`API rodando na porta ${port} ou localhost:${port}`)
 });
