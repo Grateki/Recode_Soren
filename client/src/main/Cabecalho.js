@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Logotipo from '../assets/img/logo/Logo';
 import { Link } from 'react-router-dom';
 
+
 export default function Cabecalho(){
     return (
         <Header>
@@ -11,7 +12,6 @@ export default function Cabecalho(){
                 <UL>
                     <Link1 to="/locais">LOCAIS</Link1>
                     <Link1 to="/eventos">EVENTOS</Link1>
-                    <Link1 to="#">PREMIUM</Link1>
                     <Link3 to="#">LOGIN</Link3>
                     <Link2 to="#">CADASTRO</Link2>
                 </UL>

@@ -13,9 +13,9 @@ export default function Rodape(){
                 </Circulos>
                 <NavFooter>
                     <Ul>
-                        <Link to="/sobre">Sobre</Link>
-                        <Li to="#">Informação</Li>
-                        <Li>Contato</Li>
+                        <Link>Sobre</Link>
+                        <Link>Informação</Link>
+                        <Link>Contato</Link>
                     </Ul>
                 </NavFooter>
             </InformacoesFooter>

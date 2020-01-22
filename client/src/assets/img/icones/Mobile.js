@@ -5,14 +5,17 @@ import Mobilesoren from './Mobilesoren.png'
 export default function Mobile(){
     return(
         <Figure>
-            <Img src={Mobilesoren} width="468px" height="850px" alt="Imagem da tela do aplicativo"/>
+            <Img src={Mobilesoren} width="100%" height="850px" alt="Imagem da tela do aplicativo"/>
         </Figure>
     )
-}
+};
 
 const Figure = styled.figure`
-    width:100%;
+    width:500px;
     height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const Img = styled.img`

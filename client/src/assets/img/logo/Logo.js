@@ -8,7 +8,7 @@ export default function Logotipo(){
             <Img src={Logo} alt="Logotipo Soren"/>
             <Figcaption>SOREN</Figcaption>
         </Figure>
-    )
+    );
 }
 
 const Img = styled.img`
